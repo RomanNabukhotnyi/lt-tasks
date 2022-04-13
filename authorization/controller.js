@@ -88,7 +88,7 @@ class controller {
         const tokens = generateTokens(tokenFromDb.email);
         await saveToken(tokenFromDb.email, tokens.refreshToken);
         res.cookie("refreshToken", tokens.refreshToken, { maxAge: 60 * 1000, httpOnly: true });
-        res.json({ token: tokens.accessToken })
+        res.json({ accessToken: tokens.accessToken })
     }
     async getUser(req, res) {
         res.json({
