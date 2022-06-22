@@ -120,6 +120,3 @@ inquirer.prompt([
         });
     });
 });
-
-
-
