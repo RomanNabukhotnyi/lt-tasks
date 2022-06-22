@@ -16,13 +16,16 @@ test("time: 9, now: 2022-03-22 Tue 22:00", () => {
 });
 
 test("time: 9, now: 2022-04-02 Sat 09:00", () => {
-  expect(calcDeadline(9, new Date(2022, 3, 2, 10).getTime(), new Date(2022, 3, 2, 19).getTime(), new Date(2022, 3, 2, 9).getTime())).toStrictEqual(new Date(2022, 3, 4, 19).getTime());
+  expect(calcDeadline(9, new Date(2022, 3, 2, 10).getTime(), new Date(2022, 3, 2, 19).getTime(), new Date(2022, 3, 2, 9).getTime()))
+    .toStrictEqual(new Date(2022, 3, 4, 19).getTime());
 });
 
 test("time: 9, now: 2022-04-03 Sun 09:00", () => {
-  expect(calcDeadline(9, new Date(2022, 3, 3, 10).getTime(), new Date(2022, 3, 3, 19).getTime(), new Date(2022, 3, 3, 9).getTime())).toStrictEqual(new Date(2022, 3, 4, 19).getTime());
+  expect(calcDeadline(9, new Date(2022, 3, 3, 10).getTime(), new Date(2022, 3, 3, 19).getTime(), new Date(2022, 3, 3, 9).getTime()))
+    .toStrictEqual(new Date(2022, 3, 4, 19).getTime());
 });
 
 test("time: 9, now: 2022-04-01 Fri 15:00", () => {
-  expect(calcDeadline(9, new Date(2022, 3, 1, 10).getTime(), new Date(2022, 3, 1, 19).getTime(), new Date(2022, 3, 1, 15).getTime())).toStrictEqual(new Date(2022, 3, 4, 15).getTime());
+  expect(calcDeadline(9, new Date(2022, 3, 1, 10).getTime(), new Date(2022, 3, 1, 19).getTime(), new Date(2022, 3, 1, 15).getTime()))
+    .toStrictEqual(new Date(2022, 3, 4, 15).getTime());
 });

@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "commander": "^9.3.0",
+    "dotenv": "^16.0.1",
+    "node-telegram-bot-api": "^0.57.0"
+  }
+}

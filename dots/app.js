@@ -9,7 +9,7 @@ const parse = (results, string, start = 0) => {
   }
 };
 
-string = "abcd";
+const string = "abcd";
 let results = new Array(string);
 parse(results, string);
 console.log(results);

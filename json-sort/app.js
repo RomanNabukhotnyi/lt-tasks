@@ -8,7 +8,7 @@ const doRequest = async (url, n = 3) => {
     } catch (error) {
         if (n == 0) console.log(error);
         return await doRequest(url, --n);
-    };
+    }
 };
 
 const enumeration = (object) => {
@@ -22,7 +22,7 @@ const enumeration = (object) => {
                 return result;
             }
         }
-    };
+    }
     return undefined;
 };
 const start = async () => {
@@ -33,7 +33,7 @@ const start = async () => {
         const value = enumeration(obj);
         value == true ? ++numTrue : ++numFalse;
         console.log(`${endpoint}: isDone - ${value}`);
-    };
+    }
     console.log("Values True:", numTrue);
     console.log("Values False:", numFalse);
 };

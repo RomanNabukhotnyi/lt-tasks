@@ -21,7 +21,7 @@ const foo = (string) => {
         if (Number(row[0]) <= ip && ip <= Number(row[1])) {
             return row[3];
         }
-    };
+    }
 }
 
 app.get("/", (req, res) => {
