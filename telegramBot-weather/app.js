@@ -43,7 +43,7 @@ setInterval(async () => {
     const rateEURMonobank = dataMonobank.find(rate => rate.currencyCodeA === 978);
     exchangeRatesMonobank['USD']=`${rateUSDMonobank.rateBuy.toFixed(2)} / ${rateUSDMonobank.rateSell.toFixed(2)}`;
     exchangeRatesMonobank['EUR']=`${rateEURMonobank.rateBuy.toFixed(2)} / ${rateEURMonobank.rateSell.toFixed(2)}`;
-}, 60 * 1000);
+}, 65 * 1000);
 
 try {
     const bot = new TelegramBot(token, { polling: true });
